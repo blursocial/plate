@@ -1,0 +1,1 @@
+{"version":3,"file":"getMentionOnSelectItem.d.ts","sourceRoot":"","sources":["../src/getMentionOnSelectItem.ts"],"names":[],"mappings":"AAAA,OAAO,EACL,gBAAgB,EAChB,oBAAoB,EAErB,MAAM,yBAAyB,CAAC;AAEjC,OAAO,EAEL,cAAc,EAEf,MAAM,qBAAqB,CAAC;AAM7B,MAAM,WAAW,iBAAiB;IAChC,CAAC,IAAI,EAAE,gBAAgB,GAAG,MAAM,CAAC,MAAM,EAAE,OAAO,CAAC,CAAC;CACnD;AAED,eAAO,MAAM,sBAAsB;;;uBAOT,oBAsCzB,CAAC"}

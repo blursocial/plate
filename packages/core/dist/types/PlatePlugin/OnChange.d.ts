@@ -1,0 +1,10 @@
+import { SPEditor } from '../SPEditor';
+import { TNode } from '../TNode';
+import { HandlerReturnType } from './DOMHandlers';
+/**
+ * Function called whenever a change occurs in the editor.
+ * Return `false` to prevent calling the next plugin handler.
+ * @see {@link SlatePropsOnChange}
+ */
+export declare type OnChange<T extends SPEditor = SPEditor> = (editor: T) => (value: TNode[]) => HandlerReturnType;
+//# sourceMappingURL=OnChange.d.ts.map

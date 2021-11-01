@@ -1,0 +1,8 @@
+import { SPEditor, TElement } from '@udecode/plate-core';
+import { NodeEntry } from 'slate';
+export interface MoveListItemDownOptions {
+    list: NodeEntry<TElement>;
+    listItem: NodeEntry<TElement>;
+}
+export declare const moveListItemDown: (editor: SPEditor, { list, listItem }: MoveListItemDownOptions) => void;
+//# sourceMappingURL=moveListItemDown.d.ts.map

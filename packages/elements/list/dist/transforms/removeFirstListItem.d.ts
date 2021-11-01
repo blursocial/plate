@@ -1,0 +1,10 @@
+import { SPEditor, TElement } from '@udecode/plate-core';
+import { NodeEntry } from 'slate';
+/**
+ * If list is not nested and if li is not the first child, move li up.
+ */
+export declare const removeFirstListItem: (editor: SPEditor, { list, listItem, }: {
+    list: NodeEntry<TElement<import("@udecode/plate-core").AnyObject>>;
+    listItem: NodeEntry<TElement<import("@udecode/plate-core").AnyObject>>;
+}) => boolean;
+//# sourceMappingURL=removeFirstListItem.d.ts.map

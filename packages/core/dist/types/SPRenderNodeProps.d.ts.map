@@ -1,0 +1,1 @@
+{"version":3,"file":"SPRenderNodeProps.d.ts","sourceRoot":"","sources":["../../src/types/SPRenderNodeProps.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,mCAAmC,CAAC;AAC9D,OAAO,EAAE,SAAS,EAAE,MAAM,qBAAqB,CAAC;AAEhD,MAAM,WAAW,iBAAkB,SAAQ,SAAS;IAClD,SAAS,CAAC,EAAE,MAAM,CAAC;IAEnB;;OAEG;IACH,SAAS,CAAC,EAAE,SAAS,CAAC;CACvB"}

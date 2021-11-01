@@ -1,0 +1,1 @@
+{"version":3,"file":"setIndent.d.ts","sourceRoot":"","sources":["../../src/transforms/setIndent.ts"],"names":[],"mappings":"AAAA,OAAO,EACL,kBAAkB,EAGlB,kBAAkB,EACnB,MAAM,uBAAuB,CAAC;AAC/B,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAG9C;;GAEG;AACH,eAAO,MAAM,SAAS,WACZ,OAAO;YAIwC,MAAM;UAmB9D,CAAC"}

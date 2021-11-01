@@ -1,0 +1,1 @@
+{"version":3,"file":"RenderElement.d.ts","sourceRoot":"","sources":["../../../src/types/PlatePlugin/RenderElement.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,aAAa,CAAC;AACvC,OAAO,EAAE,oBAAoB,EAAE,MAAM,yBAAyB,CAAC;AAE/D;;;;GAIG;AACH,oBAAY,aAAa,CAAC,CAAC,SAAS,QAAQ,GAAG,QAAQ,IAAI,CACzD,MAAM,EAAE,CAAC,KACN,CAAC,KAAK,EAAE,oBAAoB,KAAK,GAAG,CAAC,OAAO,GAAG,SAAS,CAAC"}

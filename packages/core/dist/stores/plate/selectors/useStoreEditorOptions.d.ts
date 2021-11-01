@@ -1,0 +1,2 @@
+export declare const useStoreEditorOptions: (id?: string | null | undefined) => import("../../..").PlateOptions<import("../../..").AnyObject> | undefined;
+//# sourceMappingURL=useStoreEditorOptions.d.ts.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"SPRenderElementProps.d.ts","sourceRoot":"","sources":["../../src/types/SPRenderElementProps.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,qBAAqB,CAAC;AAChD,OAAO,EAAE,iBAAiB,EAAE,MAAM,qBAAqB,CAAC;AACxD,OAAO,EAAE,mBAAmB,EAAE,MAAM,uBAAuB,CAAC;AAE5D,oBAAY,oBAAoB,CAAC,QAAQ,GAAG,SAAS,IAAI,iBAAiB,GACxE,mBAAmB,CAAC,QAAQ,CAAC,CAAC"}

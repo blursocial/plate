@@ -1,0 +1,1 @@
+{"version":3,"file":"createEditorPlugins.d.ts","sourceRoot":"","sources":["../../src/utils/createEditorPlugins.ts"],"names":[],"mappings":"AACA,OAAO,EAGL,WAAW,EACX,oBAAoB,EACpB,kBAAkB,EAClB,QAAQ,EACR,OAAO,EAER,MAAM,qBAAqB,CAAC;AAE7B,OAAO,EAAE,WAAW,EAAE,MAAM,aAAa,CAAC;AAE1C,OAAO,EAEL,qBAAqB,EACtB,MAAM,sBAAsB,CAAC;AAE9B;;;;;;;;GAQG;AACH,eAAO,MAAM,mBAAmB;;;;;;;KAqB/B,CAAC"}

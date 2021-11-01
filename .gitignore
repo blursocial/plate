@@ -10,10 +10,10 @@ jspm_packages/
 /packages/*/node_modules
 /packages/*/LICENSE
 **/lib
-**/dist
+# **/dist
 
 # compiled output
-/dist
+# /dist
 /tmp
 /out-tsc
 /build

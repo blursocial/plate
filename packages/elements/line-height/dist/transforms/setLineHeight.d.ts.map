@@ -1,0 +1,1 @@
+{"version":3,"file":"setLineHeight.d.ts","sourceRoot":"","sources":["../../src/transforms/setLineHeight.ts"],"names":[],"mappings":"AAAA,OAAO,EAEL,eAAe,EAGhB,MAAM,uBAAuB,CAAC;AAC/B,OAAO,EAAyB,QAAQ,EAAE,MAAM,qBAAqB,CAAC;AAGtE,OAAO,EAAE,uBAAuB,EAAE,MAAM,UAAU,CAAC;AAEnD,eAAO,MAAM,aAAa,WAChB,QAAQ;gBACwC,MAAM;2HAE7D,IAuBF,CAAC"}

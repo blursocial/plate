@@ -1,0 +1,1 @@
+{"version":3,"file":"Decorate.d.ts","sourceRoot":"","sources":["../../../src/types/PlatePlugin/Decorate.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,KAAK,EAAE,MAAM,OAAO,CAAC;AACzC,OAAO,EAAE,QAAQ,EAAE,MAAM,aAAa,CAAC;AAEvC;;;;GAIG;AACH,oBAAY,QAAQ,CAAC,CAAC,SAAS,QAAQ,GAAG,QAAQ,IAAI,CACpD,MAAM,EAAE,CAAC,KACN,CAAC,KAAK,EAAE,SAAS,KAAK,KAAK,EAAE,GAAG,SAAS,CAAC"}

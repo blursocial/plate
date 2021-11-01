@@ -1,0 +1,1 @@
+{"version":3,"file":"SPRenderLeafProps.d.ts","sourceRoot":"","sources":["../../src/types/SPRenderLeafProps.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,qBAAqB,CAAC;AAChD,OAAO,EAAE,iBAAiB,EAAE,MAAM,qBAAqB,CAAC;AACxD,OAAO,EAAE,gBAAgB,EAAE,MAAM,oBAAoB,CAAC;AAEtD,oBAAY,iBAAiB,CAAC,KAAK,GAAG,SAAS,IAAI,iBAAiB,GAClE,gBAAgB,CAAC,KAAK,CAAC,CAAC"}

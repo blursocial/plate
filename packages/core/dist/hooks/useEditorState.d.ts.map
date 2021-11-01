@@ -1,0 +1,1 @@
+{"version":3,"file":"useEditorState.d.ts","sourceRoot":"","sources":["../../src/hooks/useEditorState.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,mCAAmC,CAAC;AAClE,OAAO,EAAE,WAAW,EAAY,MAAM,aAAa,CAAC;AACpD,OAAO,EAAE,QAAQ,EAAE,MAAM,mBAAmB,CAAC;AAC7C,OAAO,EAAE,OAAO,EAAE,MAAM,kBAAkB,CAAC;AAE3C;;;;GAIG;AACH,eAAO,MAAM,cAAc,6FAEmB,CAAC"}

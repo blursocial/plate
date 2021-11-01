@@ -1,0 +1,1 @@
+{"version":3,"file":"unindentListItems.d.ts","sourceRoot":"","sources":["../../src/transforms/unindentListItems.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,qBAAqB,CAAC;AAC/C,OAAO,EAAiB,oBAAoB,EAAE,MAAM,iBAAiB,CAAC;AAEtE,oBAAY,wBAAwB,GAAG,IAAI,CAAC,oBAAoB,EAAE,UAAU,CAAC,CAAC;AAE9E,eAAO,MAAM,iBAAiB,WACpB,QAAQ,YACP,wBAAwB,KAChC,IAA8D,CAAC"}
