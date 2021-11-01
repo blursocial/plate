@@ -26,7 +26,7 @@ const stripSlateDataAttributes = (rawHtml: string): string =>
  */
 const stripClassNames = (
   html: string,
-  { preserveClassNames = ['slate-'] }: { preserveClassNames?: string[] }
+  { preserveClassNames = ['xyz-'] }: { preserveClassNames?: string[] }
 ) => {
   const allClasses = html.split(/(class="[^"]*")/g);
 
