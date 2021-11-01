@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEventEditorId, useStoreEditorRef } from '@udecode/plate-core';
 import { insertImage } from '@udecode/plate-image';
-import { ToolbarButton, ToolbarButtonProps } from '@udecode/plate-toolbar';
+import { ToolbarButtonProps } from '@udecode/plate-toolbar';
 
 export interface ToolbarImageProps extends ToolbarButtonProps {
   /**
@@ -10,27 +10,37 @@ export interface ToolbarImageProps extends ToolbarButtonProps {
   getImageUrl?: () => Promise<string>;
 }
 
-export const ToolbarImage = ({ getImageUrl, ...props }: ToolbarImageProps) => {
+export const ToolbarImage = ({
+  uploadedImgUrl,
+  ...props
+}: ToolbarImageProps) => {
   const editor = useStoreEditorRef(useEventEditorId('focus'));
+  const handleUploadImage = async (e: any) => {
+    const formData = new FormData();
+    formData.append('File', e.currentTarget.files[0]);
+    const res = await fetch('/api/file/uploadFile', {
+      method: 'POST',
+      body: formData,
+    });
+    const resJson = await res.json();
+    return `https://blur-image.sfo3.digitaloceanspaces.com/${resJson.image}`;
+  };
 
+  let url;
   return (
-    <ToolbarButton
-      onMouseDown={async (event) => {
-        if (!editor) return;
-
-        event.preventDefault();
-
-        let url;
-        if (getImageUrl) {
-          url = await getImageUrl();
-        } else {
-          url = window.prompt('Enter the URL of the image:');
-        }
-        if (!url) return;
-
-        insertImage(editor, url);
-      }}
-      {...props}
-    />
+    <>
+      <input
+        type="file"
+        accept="image/*"
+        onChange={async (e) => {
+          if (!editor) return;
+          e.preventDefault();
+          url = await handleUploadImage(e);
+          if (!url) return;
+          insertImage(editor, url);
+        }}
+        {...props}
+      />
+    </>
   );
 };
