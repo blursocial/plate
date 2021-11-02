@@ -279,7 +279,7 @@ const ToolbarButton = props => {
     icon,
     tooltip,
     onMouseDown,
-    as = 'span'
+    as = 'input'
   } = props;
   const spanProps = {
     onMouseDown
