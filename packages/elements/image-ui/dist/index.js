@@ -334,7 +334,7 @@ const ToolbarImage = ({
   let url;
   const editor = plateCore.useStoreEditorRef(plateCore.useEventEditorId('focus'));
 
-  getImageUrl = async e => {
+  const handleImgUpload = async e => {
     const formData = new FormData();
     formData.append('File', e.currentTarget.files[0]);
     const res = await fetch('/api/file/uploadFile', {
@@ -342,6 +342,7 @@ const ToolbarImage = ({
       body: formData
     });
     const resJson = await res.json();
+    url = `https://blur-image.sfo3.digitaloceanspaces.com/${resJson.image}`;
     return `https://blur-image.sfo3.digitaloceanspaces.com/${resJson.image}`;
   };
 
@@ -351,11 +352,7 @@ const ToolbarImage = ({
     onChange: async e => {
       if (!editor) return;
       e.preventDefault();
-
-      if (getImageUrl) {
-        url = await getImageUrl(e);
-      }
-
+      handleImgUpload(e);
       if (!url) return;
       plateImage.insertImage(editor, url);
     }
