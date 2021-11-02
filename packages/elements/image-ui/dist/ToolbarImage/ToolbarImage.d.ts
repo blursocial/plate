@@ -6,5 +6,5 @@ export interface ToolbarImageProps extends ToolbarButtonProps {
      */
     getImageUrl?: () => Promise<string>;
 }
-export declare const ToolbarImage: ({ uploadedImgUrl, ...props }: ToolbarImageProps) => JSX.Element;
+export declare const ToolbarImage: ({ getImageUrl, ...props }: ToolbarImageProps) => JSX.Element;
 //# sourceMappingURL=ToolbarImage.d.ts.map

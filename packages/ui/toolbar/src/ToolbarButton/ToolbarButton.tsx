@@ -5,7 +5,7 @@ import { getToolbarButtonStyles } from './ToolbarButton.styles';
 import { ToolbarButtonProps } from './ToolbarButton.types';
 
 export const ToolbarButton = (props: ToolbarButtonProps) => {
-  const { icon, tooltip, onMouseDown, as = 'span' } = props;
+  const { icon, tooltip, onMouseDown, as = 'input' } = props;
 
   const spanProps = {
     onMouseDown,
@@ -22,7 +22,6 @@ export const ToolbarButton = (props: ToolbarButtonProps) => {
   };
 
   const { root, active } = getToolbarButtonStyles(props);
-
   const button = (
     <span
       data-testid="ToolbarButton"

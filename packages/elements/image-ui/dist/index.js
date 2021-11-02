@@ -12,6 +12,7 @@ var reResizable = require('re-resizable');
 var slate = require('slate');
 var slateReact = require('slate-react');
 var plateImage = require('@udecode/plate-image');
+var plateToolbar = require('@udecode/plate-toolbar');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -328,9 +329,10 @@ var _StyledTextareaAutosize = _styled__default['default'](TextareaAutosize__defa
 })(["", ""], p => p.$_css8);
 
 const ToolbarImage = ({
-  uploadedImgUrl,
+  getImageUrl,
   ...props
 }) => {
+  let url;
   const editor = plateCore.useStoreEditorRef(plateCore.useEventEditorId('focus'));
 
   const handleUploadImage = async e => {
@@ -344,18 +346,26 @@ const ToolbarImage = ({
     return `https://blur-image.sfo3.digitaloceanspaces.com/${resJson.image}`;
   };
 
-  let url;
-  return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("input", _extends({
+  return /*#__PURE__*/React__default['default'].createElement(plateToolbar.ToolbarButton, _extends({
+    onMouseDown: async event => {
+      if (!editor) return;
+      event.preventDefault();
+    }
+  }, props), /*#__PURE__*/React__default['default'].createElement("input", {
+    id: "file-ul",
     type: "file",
     accept: "image/*",
-    onChange: async e => {
+    style: {
+      display: 'none'
+    },
+    onClick: async e => {
       if (!editor) return;
       e.preventDefault();
       url = await handleUploadImage(e);
       if (!url) return;
       plateImage.insertImage(editor, url);
     }
-  }, props)));
+  }));
 };
 
 exports.ImageElement = ImageElement;

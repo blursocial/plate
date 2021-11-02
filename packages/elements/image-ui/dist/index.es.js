@@ -8,6 +8,7 @@ import { Resizable } from 're-resizable';
 import { Transforms, Node } from 'slate';
 import { useFocused, useSelected, ReactEditor } from 'slate-react';
 import { insertImage } from '@udecode/plate-image';
+import { ToolbarButton } from '@udecode/plate-toolbar';
 
 const getImageElementStyles = props => {
   const {
@@ -318,9 +319,10 @@ var _StyledTextareaAutosize = _styled(TextareaAutosize).withConfig({
 })(["", ""], p => p.$_css8);
 
 const ToolbarImage = ({
-  uploadedImgUrl,
+  getImageUrl,
   ...props
 }) => {
+  let url;
   const editor = useStoreEditorRef(useEventEditorId('focus'));
 
   const handleUploadImage = async e => {
@@ -334,18 +336,26 @@ const ToolbarImage = ({
     return `https://blur-image.sfo3.digitaloceanspaces.com/${resJson.image}`;
   };
 
-  let url;
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("input", _extends({
+  return /*#__PURE__*/React.createElement(ToolbarButton, _extends({
+    onMouseDown: async event => {
+      if (!editor) return;
+      event.preventDefault();
+    }
+  }, props), /*#__PURE__*/React.createElement("input", {
+    id: "file-ul",
     type: "file",
     accept: "image/*",
-    onChange: async e => {
+    style: {
+      display: 'none'
+    },
+    onClick: async e => {
       if (!editor) return;
       e.preventDefault();
       url = await handleUploadImage(e);
       if (!url) return;
       insertImage(editor, url);
     }
-  }, props)));
+  }));
 };
 
 export { ImageElement, ImageHandle, ToolbarImage, getImageElementStyles };

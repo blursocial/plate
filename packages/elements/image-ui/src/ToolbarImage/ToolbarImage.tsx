@@ -7,15 +7,13 @@ export interface ToolbarImageProps extends ToolbarButtonProps {
   /**
    * Default onMouseDown is getting the image url by calling this promise before inserting the image.
    */
-  getImageUrl?: () => Promise<string>;
+  getImageUrl?: (e: any) => Promise<string>;
 }
 
-export const ToolbarImage = ({
-  uploadedImgUrl,
-  ...props
-}: ToolbarImageProps) => {
+export const ToolbarImage = ({ getImageUrl, ...props }: ToolbarImageProps) => {
+  let url: any;
   const editor = useStoreEditorRef(useEventEditorId('focus'));
-  const handleUploadImage = async (e: any) => {
+  getImageUrl = async (e) => {
     const formData = new FormData();
     formData.append('File', e.currentTarget.files[0]);
     const res = await fetch('/api/file/uploadFile', {
@@ -26,7 +24,6 @@ export const ToolbarImage = ({
     return `https://blur-image.sfo3.digitaloceanspaces.com/${resJson.image}`;
   };
 
-  let url;
   return (
     <>
       <input
@@ -35,7 +32,9 @@ export const ToolbarImage = ({
         onChange={async (e) => {
           if (!editor) return;
           e.preventDefault();
-          url = await handleUploadImage(e);
+          if (getImageUrl) {
+            url = await getImageUrl(e);
+          }
           if (!url) return;
           insertImage(editor, url);
         }}
