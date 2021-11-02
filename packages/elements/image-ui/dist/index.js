@@ -352,7 +352,7 @@ const ToolbarImage = ({
     onChange: async e => {
       if (!editor) return;
       e.preventDefault();
-      handleImgUpload(e);
+      url = await handleImgUpload(e);
       if (!url) return;
       plateImage.insertImage(editor, url);
     }
